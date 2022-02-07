@@ -3,7 +3,6 @@
 #include "transform.h"
 #include "collider.h"
 #include "render.h"
-#include "objectmask.h"
 #include <QList>
 
 class GameObject
@@ -25,7 +24,6 @@ public:
 protected:
     Transform* transform;
     Render* render;
-    QList<ObjectMask> targetMasks;
 };
 
 #endif // GAMEOBJECT_H

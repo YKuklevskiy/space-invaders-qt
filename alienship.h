@@ -22,7 +22,6 @@ public:
     float getCurDropTime() const;
 
 private:
-    float speed;
     float curDropTime;
 };
 

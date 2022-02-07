@@ -36,7 +36,6 @@ HEADERS += \
     gameui.h \
     linearprojectile.h \
     mainwindow.h \
-    objectmask.h \
     render.h \
     rocket.h \
     spaceship.h \

@@ -22,6 +22,8 @@ AlienManager::~AlienManager()
 
 void AlienManager::init()
 {
+    currentState = FLYING_LEFT;
+
     alienFieldRect = windowRect.adjusted(FIELD_BORDER+HORIZONTAL_ALIEN_OFFSET, windowRect.height()*0.5f, -FIELD_BORDER, -FIELD_BORDER);
 
     // formula for alien[i][j] center:

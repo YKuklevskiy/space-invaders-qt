@@ -64,7 +64,6 @@ bool Collider::checkObjectCollisionPF(GameObject* const object, GameObject* cons
 
     // target (increased in size by half of origin size, to calculate collision in just one raycast)
     QRectF targetCollider = target->getTransform()->getWorldSpaceColliderRect();
-    // maybe get world collider? have to check
     QRectF objectBounds = object->getTransform()->getCollider()->getBounds();
     QSizeF sizeHalved = QSizeF(objectBounds.width()*.5f, objectBounds.height()*.5f);
     targetCollider.adjust(-sizeHalved.width(), -sizeHalved.height(), sizeHalved.width(), sizeHalved.height());

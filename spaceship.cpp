@@ -7,10 +7,6 @@ SpaceShip::SpaceShip(QPointF center, TextureHolder* TH)
 {
     transform = new Transform(center, new Collider(SPACESHIP_COLLIDER_R));
     render = new Render(TH->getSpaceshipTexture());
-
-    targetMasks.clear();
-    targetMasks.append(BOMB);
-    targetMasks.append(ALIENSHIP);
 }
 
 SpaceShip::~SpaceShip() { }

@@ -15,8 +15,6 @@ public:
 
     void init();
 
-    void frame(float deltaTime);
-
     void calcAliens(float deltaTime);
     void moveAliens();
     void deleteAlien(int column, int row);

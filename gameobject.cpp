@@ -1,6 +1,6 @@
 #include "gameobject.h"
 
-GameObject::GameObject() { targetMasks.append(DEFAULT); }
+GameObject::GameObject() { }
 
 GameObject::~GameObject()
 {

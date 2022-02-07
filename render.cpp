@@ -56,12 +56,6 @@ void Render::drawCircle(QPointF center, float radius, QPainter *painter)
 
 QImage* Render::imageFromResource(QString resourcePath)
 {
-    //QString filePath = QString(QCoreApplication::applicationDirPath() + fileName);
-    //QFileInfo imageFileInfo = QFileInfo(filePath);
-
-    //if(!imageFileInfo.exists())
-    //    qDebug() << "Sprite not found! Please place all sprites in a directory with the executable.";
-
     QImage* fileImage = new QImage(resourcePath);
     fileImage->mirror(); // since we draw upside down for it to be geometrically familiar
     return fileImage;

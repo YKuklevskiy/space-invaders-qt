@@ -5,10 +5,6 @@ AlienShip::AlienShip(QPointF center, TextureHolder* TH)
     transform = new Transform(center, new Collider(ALIEN_COLLIDER_R));
     render = new Render(TH->getRandomAlienTexture());
     resetDropTimer();
-
-    targetMasks.clear();
-    targetMasks.append(ROCKET);
-    targetMasks.append(SPACESHIP);
 }
 
 AlienShip::~AlienShip() { }

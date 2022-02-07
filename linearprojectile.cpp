@@ -1,7 +1,7 @@
 #include "linearprojectile.h"
 
 LinearProjectile::LinearProjectile(GameObject * const invoker, TextureHolder * const TH, float speed,
-                                   QRectF colliderRect, QList<ObjectMask> targetMask, QString invokeSide)
+                                   QRectF colliderRect, QString invokeSide)
 {
     short velo_modifier[2] = {0, 0};
 
@@ -19,9 +19,6 @@ LinearProjectile::LinearProjectile(GameObject * const invoker, TextureHolder * c
 
     transform = new Transform(pos, new Collider(colliderRect));
     render = new Render(TH->getSpaceshipTexture()); // default
-
-    targetMasks.clear();
-    targetMask.append(targetMask);
 }
 
 void LinearProjectile::frameCalc(float deltaTime)
